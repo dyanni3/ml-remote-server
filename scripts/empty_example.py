@@ -22,3 +22,5 @@ class ExampleAPI(MLPluginAPI):
 def get_api():
 	#return CLASSNAME.getInstance()
 	return ExampleAPI.get_instance()
+
+	

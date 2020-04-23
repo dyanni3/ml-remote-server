@@ -112,6 +112,10 @@ def custom_function(name, param, callback=None):
 		#check for valid method first
 		method_to_call = getattr(mlobject, name)
 		if(method_to_call):
+<<<<<<< Updated upstream
+=======
+			call_with_checks(method_to_call, param)
+>>>>>>> Stashed changes
 			return call_with_checks(method_to_call, param, callback)
 		else:
 			return None, "No such function" + str(name)
